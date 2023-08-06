@@ -1,0 +1,52 @@
+@import url("https://fonts.google.com/specimen/Roboto");
+body {
+  margin: 0;
+  padding: 0;
+  background: hsl(234, 29%, 20%);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.content {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* ul und li noch stylen */
+}
+.content .title {
+  font-size: 24px;
+}
+.content p {
+  font-size: 16px;
+}
+.content h3 {
+  font-size: 12px;
+  font-weight: 700;
+}
+.content input {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+.content .subscribe-button {
+  background-color: hsl(235, 18%, 26%);
+  color: white;
+  padding: 15px 40px;
+  margin: 15px auto;
+  border: none;
+  border-radius: 5px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=styles.css.map */
