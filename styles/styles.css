@@ -43,18 +43,29 @@ body {
 .content svg {
   margin-right: 15px;
 }
-.content h3 {
+.content .wrapper {
+  display: flex;
+  align-items: end;
+}
+.content .wrapper h3 {
+  flex: 1;
   font-size: 12px;
   font-weight: 700;
   margin-bottom: 5px;
 }
-.content input[type=email] {
+.content .wrapper span {
+  flex: 1;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.content input[type=text] {
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
   cursor: pointer;
 }
-.content .subscribe-button {
+.content #subscribe-button {
   background-color: hsl(235, 18%, 26%);
   color: white;
   padding: 15px 40px;
@@ -63,7 +74,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
-.content .subscribe-button:hover {
+.content #subscribe-button:hover {
   background-color: hsl(4, 100%, 67%);
 }
 

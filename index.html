@@ -51,11 +51,16 @@
           And much more!
         </li>
       </ul>
-      <form>
+      <div class="wrapper">
         <h3>Email address</h3>
-        <input type="email" id="input" placeholder="email@company.com">
+        <span id="text"></span>
+      </div>
+      <form id="form" action="#">
+        <div class="inputBox">
+          <input type="text" name="" id="input" placeholder="email@company.com" onkeydown="validation()">
+        </div>
       </form>
-      <button class="subscribe-button">Subscribe to monthly newsletter</button>
+      <button id="subscribe-button">Subscribe to monthly newsletter</button>
     </div>
 
     <div class="svg-container">
@@ -203,6 +208,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/adriianoo">Adriano</a>.
   </div>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>

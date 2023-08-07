@@ -52,20 +52,33 @@ body {
         margin-right: 15px;
     }
 
-    h3 {
-        font-size: 12px;
-        font-weight: 700;
-        margin-bottom: 5px;
+    .wrapper {
+        display: flex;
+        align-items: end;
+
+        h3 {
+            flex: 1;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        span {
+            flex: 1;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
     }
 
-    input[type="email"] {
+    input[type="text"] {
         padding: 15px;
         border: 1px solid #ccc;
         border-radius: 5px;
         cursor: pointer;
     }
 
-    .subscribe-button {
+    #subscribe-button {
         background-color: hsl(235, 18%, 26%);
         color: #ffff;
         padding: 15px 40px;
