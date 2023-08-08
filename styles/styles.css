@@ -59,25 +59,94 @@ body {
   font-weight: 700;
   margin-bottom: 5px;
 }
-.content input[type=text] {
+.content .wrapper-input-and-button {
+  width: 90%;
+}
+.content .wrapper-input-and-button input[type=text] {
   padding: 15px;
+  width: 91%;
   border: 1px solid #ccc;
   border-radius: 5px;
   cursor: pointer;
 }
-.content #subscribe-button {
+.content .wrapper-input-and-button #subscribe-button {
   background-color: hsl(235, 18%, 26%);
   color: white;
   padding: 15px 40px;
+  width: 100%;
   margin-top: 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
-.content #subscribe-button:hover {
+.content .wrapper-input-and-button #subscribe-button:hover {
   background-color: hsl(4, 100%, 67%);
 }
 
+.success-message {
+  /* display: flex -> success-message | display: none -> main-screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(234, 29%, 20%);
+}
+
+.success-message-content {
+  width: 15%;
+  padding: 20px;
+  border-radius: 40px;
+  background-color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.success-message-content .wrapper {
+  margin: 20px;
+}
+.success-message-content .wrapper svg {
+  height: 37px;
+  width: 37px;
+  background-color: hsl(4, 100%, 67%);
+  border-radius: 100%;
+}
+.success-message-content .wrapper h1 {
+  font-size: 37px;
+}
+.success-message-content .wrapper p {
+  font-size: 12px;
+}
+.success-message-content .wrapper #dismiss-button {
+  background-color: hsl(235, 18%, 26%);
+  color: white;
+  width: 100%;
+  padding: 15px 40px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.success-message-content .wrapper #dismiss-button:hover {
+  background-color: hsl(4, 100%, 67%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .success-message-content {
+    width: 50%;
+  }
+  .success-message-content h1 {
+    font-size: 30px;
+  }
+  .success-message-content p {
+    font-size: 10px;
+  }
+  #dismiss-button {
+    padding: 10px 30px;
+  }
+}
 .svg-container {
   flex: 1;
 }
