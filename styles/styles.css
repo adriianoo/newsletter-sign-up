@@ -47,7 +47,7 @@ body {
   display: flex;
   align-items: end;
 }
-.content .wrapper h3 {
+.content .wrapper label {
   flex: 1;
   font-size: 12px;
   font-weight: 700;
@@ -85,7 +85,7 @@ body {
 
 .success-message {
   /* display: flex -> success-message | display: none -> main-screen */
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -97,7 +97,6 @@ body {
 }
 
 .success-message-content {
-  width: 15%;
   padding: 20px;
   border-radius: 40px;
   background-color: white;
